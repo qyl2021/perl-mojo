@@ -79,7 +79,7 @@ L<Mojolicious>, L<Mojolicious::Guides>, L<https://mojolicious.org>.
 __DATA__
 
 @@ dockerfile
-FROM perl
+FROM perl:5.41-bookworm
 WORKDIR /opt/<%= $name %>
 COPY . .
 RUN cpanm --installdeps -n .
